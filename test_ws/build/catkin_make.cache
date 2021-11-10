@@ -1,0 +1,2 @@
+tester
+-DCATKIN_DEVEL_PREFIX=/home/darshan_k_t/skillup/test_ws/devel -DCMAKE_INSTALL_PREFIX=/home/darshan_k_t/skillup/test_ws/install -G Unix Makefiles

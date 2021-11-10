@@ -1,0 +1,20 @@
+#ifndef CONSTANTS
+#define CONSTANTS
+
+
+#define PI 3.141592653589793238462643383279502884197
+#define PUREPURSUIT_GOAL_THRESHOLD 5
+#define PUREPURSUIT_STEER_MAX PI/6
+#define PUREPURSUIT_TIMESTEP 0.1
+#define LENGTH_VEHICLE 5
+#define VELOCITY_VEHICLE 20
+#define PUREPURSUIT_LOOKAHEAD 10
+#define INF std::numeric_limits<float>::infinity()
+
+
+
+
+
+#endif
+
+

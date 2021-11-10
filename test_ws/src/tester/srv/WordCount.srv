@@ -1,0 +1,3 @@
+string words
+---
+uint32 count                           #Don't type  ......"unit or unint" instead of uint.....

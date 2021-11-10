@@ -1,0 +1,4 @@
+<launch>
+        <node pkg="mpc" name="mpc" type="mpc" output="log"/>
+        <node pkg="rqt_reconfigure" name="rqt_reconfigure" type="rqt_reconfigure" output="log"/>
+</launch>

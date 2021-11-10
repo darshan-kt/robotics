@@ -1,0 +1,8 @@
+#goal
+float32 my_goal
+---
+#result
+int32 my_result
+--
+#feedback
+string my_feedback

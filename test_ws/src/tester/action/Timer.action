@@ -1,0 +1,14 @@
+#1. Goal sent by client, amount of time to be wait
+duration time_to_wait
+---
+#2. result sent by server
+#How much time to be wasted (final time)
+duration time_elapsed
+#How many updates we provided along the way
+uint32 updates_sent
+---
+#3. feedback sent by server periodically
+# the amout of time has elapsed from start (frequent update time)
+duration time_elapsed
+# the amount of time remaining untill we're done
+duration time_remaining

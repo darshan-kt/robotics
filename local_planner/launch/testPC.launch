@@ -1,0 +1,13 @@
+<launch>
+        <node pkg="local_planner" name="world2baselink" type="world2baselink.py" output="screen"/>
+        <node pkg="local_planner" name="orient_pub" type="orient_pub.py" output="screen"/>
+	<!-- <node pkg="pcl_wk" name="pcl_wk_node" type="pcl_wk_node" output="log" /> -->
+        <node pkg="tf" type="static_transform_publisher" name="Baselink2RSlidar" args="0 0 0 0 0 0 1 /base_link /rslidar 100" />
+        <node pkg="tf" type="static_transform_publisher" name="Baselink2Localmap" args="-20 -20 0 0 0 0 1 /base_link /local_map 100" />
+	<!-- <node pkg="local_planner" name="local_planner" type="local_planner" output="log" /> -->
+        <node pkg="rostopic" name="CurrentStatePublisher" type="rostopic" args="pub -r 10 /currentState std_msgs/Int16 '{data: 1}'" output="screen"/>
+        <node pkg="rostopic" name="CurrentSpeedPublisher" type="rostopic" args="pub -r 10 /speed std_msgs/Float64 '{data: 5}'" output="screen"/>
+        <node pkg="rostopic" name="CurrentRefVPublisher" type="rostopic" args="pub -r 10 /refVelocity std_msgs/Float64 '{data: 3}'" output="screen"/>
+        <!-- <node pkg="mpc" name="mpc" type="mpc" output="log"/> -->
+        <!-- <node pkg="rqt_reconfigure" name="rqt_reconfigure" type="rqt_reconfigure" output="log"/> -->
+</launch>
